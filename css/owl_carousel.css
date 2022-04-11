@@ -1,0 +1,51 @@
+
+.owl-carousel{
+    width: var(--width);
+    height: 100%;
+}
+section .slide{
+    width: 100%;
+    height: 390px;
+}
+header .slide{
+    width: 100%;
+    height: 550px;
+}
+
+
+.owl-dots{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 1%;
+}.owl-dots span{
+    width: 15px !important;
+    height: 2px !important;
+    border-radius: 0 !important;
+}.owl-dots button{
+    border: none !important;
+    outline: none !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span{
+    background: var(--primary);
+}
+
+.owl-nav button{
+    border: none !important;
+    outline: none !important;
+}
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary) !important;
+    font-size: 60px !important;
+    font-weight: bolder !important;
+    background: none !important;
+}.owl-prev{
+    left: 1%;
+}.owl-next{
+    right: 1%;
+}
+

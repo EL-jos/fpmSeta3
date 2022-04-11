@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Cocon-Regular';
+    src: url(../assets/fonts/Cocon-Regular-Font.otf);
+}
+@font-face {
+    font-family: 'Candara';
+    src: url(../assets/fonts/Candara\ Font.ttf);
+}@font-face {
+    font-family: 'Poppins Light';
+    src: url(../assets/fonts/Poppins-Light.ttf);
+}
+
+:root{
+    --background: #f7f7f7;
+    --withe: #fff;
+    --blanckBackground: rgba(0, 0, 0, .8);
+    --primary: #b0c172;
+    --secondary: #457f84;
+    --accent: #203a3a;
+    --borderRadius: 1em;
+    --title: "Cocon-Regular", sans-serif;
+    --text: "Candara", sans-serif;
+    --width: 1349px;
+    --lineHiegth: 1.7em;
+    --paddingSection: 40px;
+    --colorText: #4d4d4d;
+    --colorText2: #cacaca;
+    --shadow: 0 0 10px rgba(0, 0, 0 , .25);
+    --transition: all .4s ease-out;
+    --colorTextFooter: #cccccc;
+    --headAccordeon: #e6e6e6;
+    --letter_spacing: .1em;
+}
+
+body{
+    font-size: 15px;
+    /* background-color: var(--background); */
+    background: #f2f2f2;
+    width: var(--width);
+    margin: auto;
+    position: relative;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.el_custom_btn{
+    outline: none;
+    border: none;
+    border-radius: 2em;
+    background-image: linear-gradient(-130deg,rgb(174, 191, 114), rgb(69, 127, 130), rgb(47, 85, 86));
+    position: relative;
+    overflow: hidden;
+}.el_custom_btn .fa{
+    margin-left: .7em;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+}.el_custom_btn span:nth-child(1){
+    font-family: var(--text);
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .8em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: var(--transition);
+    padding: 1em 2em;
+    letter-spacing: .1em;
+}.el_custom_btn span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    display: block;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    transition: var(--transition);
+}.el_custom_btn:hover span:nth-child(2){
+    width: 100%;
+}.el_custom_btn:hover span:nth-child(1){
+    color: #1a1a1a;
+}.el_custom_btn:hover .fa{
+    color: #1a1a1a;
+}.el_custom_btn:hover a{
+    color: #1a1a1a;
+}
+.el-center-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-family: var(--title);
+    font-size: 2em;
+    color: var(--bleu);
+}.subtitle{
+    font-family: var(--subtitle);
+    font-size: .9em;
+    letter-spacing: 1px;
+}
+
+.el_box_title h2{
+    font-family: var(--title);
+    font-size: 2em;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-weight: 500;
+}.el_box_title legend{
+    font-family: var(--text);
+    font-size: 1em;
+    color: #cacaca;
+}.el_box_title{
+    margin-bottom: 4em;
+}
+
+#countDownEtNewletter{
+    display: flex;
+    padding: var(--paddingSection);
+}#countDownEtNewletter h3{
+    font-family: var(--title);
+    color: var(--withe);
+    font-size: 2em;
+    font-weight: 500;
+}#countDownEtNewletter p{
+    color: #cccccc;
+    font-family: var(--text);
+}#banniere article:nth-child(1){
+    position: relative;
+    z-index: 1;
+    padding: var(--paddingSection);
+}#countDownEtNewletter .el_box{
+    border: 1px solid var(--primary);
+    width: 170px;
+    padding: 1em;
+    border-radius: var(--borderRadiusService);
+}#countDownEtNewletter .el_realisations{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2em;
+}#countDownEtNewletter{
+    height: 344px;
+    background: var(--accent);
+}#countDownEtNewletter > div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+#countDownEtNewletter .el_box h4{
+    font-size: 2em;
+    padding: .5em 0;
+    font-family: var(--text);
+    color: var(--primary);
+}#countDownEtNewletter .el_box{
+    border-radius: 1em;
+    width: 120px;
+}.el_container_newsletter{
+    height: 40px;
+    width: 300px;
+    position: relative;
+    margin-top: 2em;
+}.el_container_newsletter input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 2em;
+    top: 0;
+    left: 0;
+    outline: none;
+    border: none;
+    padding: 1em;
+    padding-right: 110px;
+}.el_container_newsletter input::placeholder{
+    font-size: .7em;
+}.el_container_newsletter button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 100%;
+    box-shadow: var(--shadow);
+}#countDownEtNewletter .countDown{
+    margin-left: 5em;
+}
